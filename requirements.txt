@@ -38,7 +38,6 @@ tokenizers==0.12.1
 torch
 torchvision
 tensorflow
-tfds
 #openai whisper
 #git+https://github.com/openai/whisper.git 
 #yake
