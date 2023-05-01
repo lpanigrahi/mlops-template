@@ -14,9 +14,9 @@ RUN apt-get update && apt-get -y install --no-install-recommends \
 #            sed 's#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.gpg] https://#g' | \
 #            sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list
 
-RUN apt-get update \
-&& apt-get install -y nvidia-docker2 \
-&& systemctl restart docker
+#RUN apt-get update \
+#&& apt-get install -y nvidia-docker2 \
+#&& systemctl restart docker
 
 #create global virtual environment using python standard library tools of virtualenv
 ARG USER="codespace"
